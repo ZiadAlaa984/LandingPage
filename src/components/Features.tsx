@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Eco from '../assets/icons/ecosystem.svg';
 import Feature from './Feature';
 
+
 const features = [
   {
     title: "Integration Ecosystem",
@@ -22,7 +23,7 @@ const features = [
 
 export const Features = () => {
   return <div className="bg-black text-white py-[72px]">
-    <div className="container">
+    <div className="container relative">
       <h2 className='text-center font-bold text-5xl sm:text-6xl tracking-tighter'>Every You Need </h2>
       <div className='max-w-xl mx-auto'>
               <p className='text-center mt-5  text-xl  text-white/70'>Lorem ipsum dolor sit amet consectetur adipisicing elit.

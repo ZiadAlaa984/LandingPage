@@ -4,7 +4,7 @@ import Youtube from '../assets/icons/youtube.svg'
 import Xsocial from '../assets/icons/x-social.svg'
 export const Footer = () => {
   return <footer className='py-4 bg-black text-white/60 border-t border-white/20'>
-    <div className="container">
+    <div className="container relative">
       <div className="flex flex-col sm:flex-row justify-between items-center">
         <div className="text-center">
           @ 2024 Your ziad All rights reserved

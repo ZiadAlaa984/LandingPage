@@ -9,12 +9,9 @@ export default function Feature({ index, title, description }: {
   description: string;
 }) {
   const offsetX = useMotionValue(0);
-  const offsetY = useMotionValue(0);
-  console.log(offsetX);
-  
+  const offsetY = useMotionValue(0);  
   const MaskImage = useMotionTemplate`radial-gradient(100px 100px at ${offsetX}px ${offsetY}px, black, transparent)`;
   const border = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     function updatePosition(e: MouseEvent) {
       if (!border.current) return;

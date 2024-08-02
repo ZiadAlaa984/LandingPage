@@ -19,7 +19,7 @@ const images = [
 
 export const LogoTicker = () => {
   return <div className="bg-black text-white py-[72px] sm:py-24">
-    <div className="container ">
+    <div className="container relative ">
       <h2 className="text-xl text-white/70 text-center  ">Trusted By The World's most innovation Teams </h2>
       <div className="overflow-hidden flex mt-9 before:content-[''] before:z-10 after:content-['']  after:right-0 before:left-0 before:top-0 after:top-0 after:bg-[linear-gradient(to_left,#000,rgb(0,0,0,0))] before:bg-[linear-gradient(to_right,#000,rgb(0,0,0,0))]  relative  before:absolute before:h-full before:w-5  after:absolute after:h-full after:w-5   ">
         <motion.div
@@ -35,8 +35,8 @@ export const LogoTicker = () => {
         translateX:'-50%'
           }}
           className="flex gap-16 flex-none pr-16 ">
-        {images.map((imgSrc) =>   <Image className="flex-none" src={imgSrc.src} alt={imgSrc.alt}/>)}
-        {images.map((imgSrc) =>   <Image className="flex-none" src={imgSrc.src} alt={imgSrc.alt}/>)}
+        {images.map((imgSrc , index) =>   <Image key={index} className="flex-none" src={imgSrc.src} alt={imgSrc.alt}/>)}
+        {images.map((imgSrc , index) =>   <Image key={index} className="flex-none" src={imgSrc.src} alt={imgSrc.alt}/>)}
 
       </motion.div>
       </div>

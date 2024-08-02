@@ -1,12 +1,9 @@
-import helix from '../assets/images/helix2.png'
-import emoj from '../assets/images/emojistar.png'
-import Image from "next/image";
 export const CallToAction = () => {
 
   return    <div className="text-white overflow-hidden bg-black  py-[72px] sm:py-24">
-    <div className="container  max-w-xl relative ">
-      <Image src={helix} className='absolute -top-[120px] right-[calc(100%+24px)] hidden sm:inline' />
-      <Image src={emoj} className='absolute top-6 left-[calc(100%+36px)] hidden sm:inline' />
+    <div className="container   max-w-xl relative ">
+      <img src="../assets/images/helix2.png" className='absolute -top-[120px] right-[calc(100%+24px)] hidden sm:inline' alt="" />
+      <img src="../assets/images/emojistar.png" className='absolute -top-[120px] right-[calc(100%+24px)] hidden sm:inline' alt="" />
         <h2 className="text-center text-5xl sm:text-6xl tracking-tighter font-bold">
          Get Instant Access
       </h2>

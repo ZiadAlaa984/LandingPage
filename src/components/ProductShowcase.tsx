@@ -7,8 +7,6 @@ import { useRef } from "react";
 export const ProductShowcase = () => {
   // Create a ref for the container of the image
   const appImageContainerRef = useRef<HTMLDivElement>(null);
-  console.log(useScroll());
-  
   // Set up scroll animation for the container
   const { scrollYProgress } = useScroll({
     target: appImageContainerRef,
@@ -21,7 +19,7 @@ export const ProductShowcase = () => {
 
   return (
     <div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] ">
-      <div className="container w-[90%]">
+      <div className="container relative w-[90%]">
         <h2 className="text-center text-5xl sm:text-6xl tracking-tighter font-bold">
           Intuitive Interface
         </h2>

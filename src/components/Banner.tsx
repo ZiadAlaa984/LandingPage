@@ -6,7 +6,7 @@ export default function Banner() {
         backgroundImage: 'linear-gradient(to right, rgba(252, 214, 255, 0.7), rgba(41, 216, 255, 0.7), rgba(255, 253, 128, 0.7), rgba(248, 154, 191, 0.7), rgba(252, 214, 255, 0.7))'
       }}
     >
-      <div className="container">
+      <div className="container relative">
         <p>
           <span className="font-medium hidden sm:inline"> 
             Introducting a completely redesigned interface -{' '}
